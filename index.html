@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Console.js</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    #content {
+      position: fixed;
+      width: calc(100% - 20px);
+    }
+    #content div {
+      width: 100%;
+      height: 15px;
+      background: #fafafa;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/combine/npm/vue@2/dist/vue.min.js,gh/slymax/console@0.1.1/console.min.js"></script>
+  <div id="content">
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+  </div>
+  <script>
+    console.log("console.js intercepts console.log() messages,");
+    console.error("console.error() messages,");
+    console.warn("console.warn() messages,");
+    console.info("console.info() messages,");
+    console.error("and JavaScript errors.");
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+#console-js {
+  all: initial;
+  color: #c8c8c8;
+  opacity: 0.99;
+  position: fixed;
+  z-index: 9999999;
+  display: block !important;
+  font-family: "Source Code Pro";
+  background-color: #282c34;
+  -webkit-transition: bottom 0.25s;
+  transition: bottom 0.25s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 13px;
+  bottom: -175px;
+  height: 200px;
+  width: 100%;
+  left: 0; }
+  #console-js .title {
+    margin: 0;
+    color: #606060;
+    font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #21252b;
+    padding: 5px 12px;
+    cursor: pointer;
+    height: 15px; }
+  #console-js ul {
+    margin: 0;
+    overflow: auto;
+    max-height: 165px;
+    padding: 5px 0 0 0;
+    border-top: 1px solid #181a1f; }
+    #console-js ul::-webkit-scrollbar {
+      display: none; }
+    #console-js ul li {
+      list-style: none;
+      line-height: 20px; }
+      #console-js ul li span {
+        -webkit-user-select: auto;
+           -moz-user-select: auto;
+            -ms-user-select: auto;
+                user-select: auto;
+        padding-left: 10px;
+        display: inline-block;
+        word-break: break-word;
+        width: calc(100% - 60px);
+        border-left: 2px solid #282c34; }
+        #console-js ul li span::-moz-selection {
+          background: #aaaaaa; }
+        #console-js ul li span::selection {
+          background: #aaaaaa; }
+        #console-js ul li span.warn {
+          color: #f1aa6a;
+          border-color: #f1aa6a; }
+        #console-js ul li span.error {
+          color: #db5762;
+          border-color: #db5762; }
+        #console-js ul li span.info {
+          color: #6aacf1;
+          border-color: #6aacf1; }
+  #console-js.active {
+    bottom: 0; }
