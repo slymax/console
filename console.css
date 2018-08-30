@@ -9,10 +9,6 @@
   background-color: #282c34;
   -webkit-transition: bottom 0.25s;
   transition: bottom 0.25s;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   font-size: 13px;
   bottom: -175px;
   height: 200px;
@@ -24,6 +20,10 @@
     font-weight: bold;
     -webkit-tap-highlight-color: transparent;
     background-color: #21252b;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     padding: 5px 12px;
     cursor: pointer;
     height: 15px; }
@@ -39,10 +39,6 @@
       list-style: none;
       line-height: 20px; }
       #console-js ul li span {
-        -webkit-user-select: auto;
-           -moz-user-select: auto;
-            -ms-user-select: auto;
-                user-select: auto;
         padding-left: 10px;
         display: inline-block;
         word-break: break-word;
